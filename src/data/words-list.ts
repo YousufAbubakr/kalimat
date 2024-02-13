@@ -403,7 +403,7 @@ export const wordsList: string[] = [
 
 export const day = (): number => {
   const TODAY = new Date();
-  const start = new Date(2022, 0, 27);
+  const start = new Date(2024, 1, 10);
   const diff = Number(TODAY) - Number(start);
   return Math.floor(diff / (1000 * 60 * 60 * 24));
 };

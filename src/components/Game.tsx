@@ -133,7 +133,7 @@ const Board = ({ wordColors, setWordColors, setCloseModal, setGameResult }: Prop
   }, [wordColors]);
 
   useEffect(() => {
-    if (boardWords[wordIndexRef.current - 1]?.join("") === rightWord && disableKeyBoard) {
+    if (boardWords[wordIndexRef.current - 1]?.join("") === rightWord && !disableKeyBoard) {
       setToastData(["أحسنت !"]);
       setTimeout(() => {
         setCloseModal(false);
