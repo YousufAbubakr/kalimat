@@ -59,7 +59,7 @@ const Modal = ({ gameResult, data, closeModal, setCloseModal }: Props) => {
         <div className="w-2/3 h-full flex flex-col justify-center items-center">
           <h1 className="text-xl font-bold">توزيع التخمينات</h1>
           <div className="mt-5 w-full flex flex-col justify-center items-center">
-            {gameResult === "idle" ? (
+            {gameResult !== "idle" ? (
               data?.map((wordColors, index) => {
                 let bool = false;
                 let letterIndex = 0;
@@ -80,7 +80,7 @@ const Modal = ({ gameResult, data, closeModal, setCloseModal }: Props) => {
               <h2> لا توجد بيانات</h2>
             )}
           </div>
-          {gameResult === "idle" ? (
+          {gameResult !== "idle" ? (
             <button onClick={handleShare} className={`mt-10 mb-5 flex px-8 py-4 rounded-md ${letterRight} hover:bg-green-600 text-white font-bold`}>
               <Share />
               <span className="mr-2">شارك</span>
