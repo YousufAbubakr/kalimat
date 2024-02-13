@@ -1,5 +1,4 @@
 export const wordsList: string[] = [
-  "تحلية",
   "تلبية",
   "عندما",
   "لماذا",
