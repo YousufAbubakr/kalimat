@@ -10,7 +10,7 @@ const Header = ({ closeModal, setCloseModal }: Props) => {
       <button className="" onClick={() => setCloseModal(false)}>
         <Statistics />
       </button>
-      <h1 className="text-4xl w-full">كلمة (Arabic 1B, Chapters 7/8)</h1>
+      <h1 className="text-4xl w-full">كلمة</h1>
     </div>
   );
 };
