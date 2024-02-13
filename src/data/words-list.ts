@@ -73,6 +73,6 @@ export const getWordOfTheDay = (): string => {
   while (theDay > wordsList.length) {
     theDay--;
   }
-  const rndInt = Math.floor(Math.random() * 61) + 1
+  const rndInt = Math.floor(Math.random() * 60) + 1
   return wordsList[rndInt];
 };
